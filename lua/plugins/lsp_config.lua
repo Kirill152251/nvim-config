@@ -13,6 +13,7 @@ return {
                     "lua_ls",
                     "pyright",
                     "dockerls",
+                    "gopls",
                     "docker_compose_language_service",
                     "yamlls"
                 },
@@ -36,6 +37,9 @@ return {
                 capabilities = capabilities
             })
             lspconfig.dockerls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.gopls.setup({
                 capabilities = capabilities
             })
             lspconfig.docker_compose_language_service.setup({
