@@ -15,7 +15,8 @@ return {
                     "dockerls",
                     "gopls",
                     "docker_compose_language_service",
-                    "yamlls"
+                    "yamlls",
+                    "sqls"
                 },
             }
         end
@@ -46,6 +47,9 @@ return {
                 capabilities = capabilities
             })
             lspconfig.yamlls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.sqls.setup({
                 capabilities = capabilities
             })
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

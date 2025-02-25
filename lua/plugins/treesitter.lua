@@ -4,7 +4,7 @@ return {
     config = function ()
         local ts_config = require("nvim-treesitter.configs")
         ts_config.setup({
-            ensure_installed = { "lua", "vim", "javascript", "html", "css", "python", "markdown", "markdown_inline", "kotlin", "java", "pascal", "dockerfile", "json", "go" },
+            ensure_installed = { "lua", "vim", "javascript", "html", "css", "python", "markdown", "markdown_inline", "kotlin", "java", "pascal", "dockerfile", "json", "go", "sql" },
             sync_install = false,
             highlight = { enable = true },
             indent = { enable = true },
